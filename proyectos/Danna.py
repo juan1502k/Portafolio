@@ -48,7 +48,7 @@ def write_message():
     pen.penup()
     pen.goto(0, -230)
     pen.color("darkmagenta")
-    pen.write("TE AMO DANNA DÍAZ", align="center", font=("Arial", 18, "bold"))
+    pen.write("TE AMO DANNA", align="center", font=("Arial", 18, "bold"))
 
 # Ejecutar funciones
 draw_heart_lines()
