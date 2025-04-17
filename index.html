@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="imagenes/logo.png">
+  <title>Portafolio - Juan Romero</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+    <header>
+      <h1 id="titulo">Juan Romero</h1>
+      <img src="imagenes/juan.jpg" alt="Foto de Juan Romero" class="avatar perfil-click">
+      <nav>
+        <ul>
+          <li><a href="#sobre-mi">Sobre mí</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div id="lightbox-perfil" class="lightbox">
+        <span id="cerrar-perfil">&times;</span>
+        <img id="img-perfil-ampliada" src="" alt="Imagen Ampliada">
+      </div>
+  
+    <section id="sobre-mi" class="fade-in">
+      <h2>Sobre mí</h2>
+      <p>Soy técnico en sistemas con amplia experiencia en python, html, javascript, css, excel avanzado, mysql y oracle.</p>
+    </section>
+  
+    <section id="proyectos" class="fade-in">
+      <h2>Proyectos</h2>
+      <div class="proyecto">
+        <h3>Regalo Danna</h3>
+        <p>Corazon en python</p>
+        <a href="proyectos/Danna.py" download class="boton-descarga">Descargar archivo</a>
+
+      </div>
+      <div class="galeria-superpuesta">
+        <img src="imagenes/CodigoCorazon.jpg" alt="Imagen 1" class="img-galeria" />
+        <img src="imagenes/Corazon.jpg" alt="Imagen 2" class="img-galeria img-superpuesta" />
+      </div>
+
+      <div class="proyecto">
+        <h3>Inventario Tienda</h3>
+        <p>App de inventarios en python</p>
+        <a href="proyectos/inventario_app.py" download class="boton-descarga">Descargar archivo</a>
+
+      </div>
+      <div class="galeria-superpuesta">
+        <img src="imagenes/inventario.jpg" alt="Imagen 1" class="img-galeria" />
+        <img src="imagenes/inventarioapp.jpg" alt="Imagen 2" class="img-galeria img-superpuesta" />
+      </div>
+      
+      <!-- Lightbox -->
+      <div id="lightbox" class="lightbox">
+        <span id="cerrar">&times;</span>
+        <img id="img-ampliada" src="" alt="Imagen Ampliada">
+      </div>
+      
+      <section id="contacto" class="fade-in">
+        <h2>Contacto</h2>
+        <div class="iconos-contacto">
+          <div class="contacto-item">
+            <i class="fab fa-google"></i>
+            <span>Correo</span>
+            <span> <br> juan1502k@gmail.com</span>
+          </div>
+          <div class="contacto-item">
+            <i class="fab fa-whatsapp"></i>
+            <span>WhatsApp</span>
+            <span> <br> +57 3103066056</span>
+          </div>
+        </div>
+      </section>
+      
+  
+    <footer>
+        <div class="redes-sociales">
+          <a href="mailto:juan1502k@gmail.com" target="_blank" title="Gmail"><i class="fab fa-google"></i></a>
+          <a href="https://wa.me/3103066056" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          <a href="https://www.instagram.com/juan1502k_" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://github.com/tuusuario" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+        </div>
+        <p>© 2025 Juan Romero - Todos los derechos reservados</p>
+      </footer>
+  
+    <!-- Botón volver arriba -->
+    <button id="btn-arriba" title="Volver arriba">↑</button>
+  
+    <script src="script.js"></script>
+  </body>
+  
